@@ -8,22 +8,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f8f8f8;
+            background-color: #f2f2f2;
             color: #333;
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 32px;
             text-align: center;
             margin-bottom: 20px;
-            color: #555;
+            color: #222;
         }
 
         p {
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 10px;
-            color: #777;
+            color: #444;
         }
 
         .container {
@@ -31,7 +31,7 @@
             margin: 0 auto;
             background-color: #fff;
             padding: 50px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -56,8 +56,6 @@
         }
 
         .contact-info {
-            text-align: center;
-            margin-top: 40px;
             color: #777;
         }
 
@@ -69,82 +67,88 @@
             font-weight: bold;
         }
 
-        .feedback {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .feedback textarea {
+        .map-container {
             width: 100%;
-            height: 100px;
-            margin-bottom: 10px;
+            height: 400px;
+            margin-top: 20px;
         }
 
-        .feedback button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+        /* Autoliv Branding */
+        .autoliv {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .autoliv .container {
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .autoliv h1 {
+            font-size: 32px;
+            color: #222;
+        }
+
+        .autoliv p {
+            color: #444;
+        }
+
+        .autoliv footer {
+            color: #888;
+        }
+
+        .autoliv .contact-info {
+            color: #777;
+        }
+
+        .autoliv .map-container {
+            margin-top: 20px;
+        }
+
+        .autoliv .map-container iframe {
+            border: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img class="logo" src="https://seeklogo.com/images/F/fc-norma-tallinn-early-90-s-logo-11FFBD2BAD-seeklogo.com.png" alt="Logo">
-        <div class="content">
-            <h1>Terms of Service</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Nullam consectetur velit ac est fringilla hendrerit.</p>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <p>Sed maximus libero nec tortor efficitur, ut pulvinar velit eleifend.</p>
-            <p>Morbi venenatis, nunc id rhoncus feugiat, libero nisl semper felis, sit amet tincidunt nisi ipsum vitae sem.</p>
-            <p>Vivamus quis leo vel arcu faucibus mattis.</p>
-            <p>Sed ac eleifend odio, non faucibus est.</p>
-            <p>Etiam tristique felis justo, ac gravida tellus maximus a.</p>
-        </div>
-        <footer>
-            &copy; 2023 Norma AS.
-            <div class="contact-info">
-                <p><span>Email:</span> info@norma.com</p>
-                <p><span>Telefon:</span> +372 1234 5678</p>
+    <div class="autoliv">
+        <div class="container">
+            <img class="logo" src="https://seeklogo.com/images/F/fc-norma-tallinn-early-90-s-logo-11FFBD2BAD-seeklogo.com.png" alt="Logo">
+            <div class="content">
+                <h1>Terms of Service</h1>
+                <p>Kui lehega tekib mingi probleem või tee leidsite mingi vea, siis palun kirjutage meile:</p>
+                <p>1. Kristjan Lessel - <a href="mailto:kristjan.lessel@autoliv.com">kristjan.lessel@autoliv.com</a></p>
+                <p>2. Keijo-Kim Taal - <a href="mailto:keijo-kim.taal@autoliv.com">keijo-kim.taal@autoliv.com</a></p>
+                <p>Nullam consectetur velit ac est fringilla hendrerit.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <p>Sed maximus libero nec tortor efficitur, ut pulvinar velit eleifend.</p>
+                <p>Morbi venenatis, nunc id rhoncus feugiat, libero nisl semper felis, sit amet tincidunt nisi ipsum vitae sem.</p>
+                <p>Vivamus quis leo vel arcu faucibus mattis.</p>
+                <p>Sed ac eleifend odio, non faucibus est.</p>
+                <p>Etiam tristique felis justo, ac gravida tellus maximus a.</p>
             </div>
-        </footer>
+            
+            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202993.15670377362!2d24.70033063220413!3d59.436960705046015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469294aa14b22e37%3A0x6db0f7bf42220bf!2sLaki%2014%2C%2010621%20Tallinn%2C%20Estonia!5e0!3m2!1sen!2sus!4v1626706981211!5m2!1sen!2sus"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
     </div>
-    <script>
-        var email1 = "kristjan.lessel@autoliv.com";
-        var email2 = "keijo-kim.taal@autoliv.com";
-        var message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-        var subject = "Lehel juhtus midagi";
-
-        function sendEmail(email, subject, message) {
-            // Simulate sending an email
-            console.log("Sending email to: " + email);
-            console.log("Subject: " + subject);
-            console.log("Message: " + message);
-            // Replace the console.log statements with your actual email sending logic
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            // Get the feedback form elements
-            var feedbackForm = document.getElementById("feedback-form");
-            var feedbackTextarea = document.getElementById("feedback-textarea");
-            var feedbackButton = document.getElementById("feedback-button");
-
-            // Add click event listener to the feedback button
-            feedbackButton.addEventListener("click", function() {
-                var feedbackText = feedbackTextarea.value;
-
-                // Send email to Kristjan Lessel
-                sendEmail(email1, subject, feedbackText);
-
-                // Send email to Keijo-Kim Taal
-                sendEmail(email2, subject, feedbackText);
-
-                // Clear the feedback textarea
-                feedbackTextarea.value = "";
-            });
-        });
-    </script>
+    <footer>
+        
+        <div class="contact-info">
+            <p><span>Email:</span> norma@autoliv.com</p>
+            <p><span>Telefon:</span> +372 6500442</p>
+            Laki 14, 10621 Tallinn, Eesti</p>
+        </div> 
+        
+        &copy; 2023 Norma AS.
+    </footer>
+   
 </body>
 </html>
