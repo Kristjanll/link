@@ -111,5 +111,40 @@
             </div>
         </footer>
     </div>
+    <script>
+        var email1 = "kristjan.lessel@autoliv.com";
+        var email2 = "keijo-kim.taal@autoliv.com";
+        var message = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+        var subject = "Lehel juhtus midagi";
+
+        function sendEmail(email, subject, message) {
+            // Simulate sending an email
+            console.log("Sending email to: " + email);
+            console.log("Subject: " + subject);
+            console.log("Message: " + message);
+            // Replace the console.log statements with your actual email sending logic
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the feedback form elements
+            var feedbackForm = document.getElementById("feedback-form");
+            var feedbackTextarea = document.getElementById("feedback-textarea");
+            var feedbackButton = document.getElementById("feedback-button");
+
+            // Add click event listener to the feedback button
+            feedbackButton.addEventListener("click", function() {
+                var feedbackText = feedbackTextarea.value;
+
+                // Send email to Kristjan Lessel
+                sendEmail(email1, subject, feedbackText);
+
+                // Send email to Keijo-Kim Taal
+                sendEmail(email2, subject, feedbackText);
+
+                // Clear the feedback textarea
+                feedbackTextarea.value = "";
+            });
+        });
+    </script>
 </body>
 </html>
